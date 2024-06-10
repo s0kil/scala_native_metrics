@@ -8,6 +8,6 @@ GC_NPROCS=$(nproc)
 hyperfine \
     --export-markdown BENCHMARK.md \
     --warmup 3 \
-    './main_perf_none' './main_perf_boehm' './main_perf_immix' './main_perf_commix'
+    './main_jvm' './main_perf_none' './main_perf_boehm' './main_perf_immix' './main_perf_commix'
 
 cat BENCHMARK.md >>README.md

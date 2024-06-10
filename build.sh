@@ -5,6 +5,10 @@
 
 rm -f main_*
 
+scala-cli --power package Main.scala -o main_jvm \
+    --force \
+    --assembly
+
 scala-cli --power package Main.scala -o main_size \
     --force \
     --native \
